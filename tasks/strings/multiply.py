@@ -11,7 +11,7 @@
 """
 
 
-def multiply_str(user_string: str, n: str) -> str:
+def multiply_str(user_string: 'str', n: str) -> str:
     """Дублирует строку n-раз
 
     :param user_string: строка для повторения
@@ -19,7 +19,8 @@ def multiply_str(user_string: str, n: str) -> str:
 
     :return: результирующая строка
     """
-    result = None
+    n = int(n)
+    result = user_string * n
     return result
 
 

@@ -18,14 +18,14 @@ def str_sum(str1: str, str2: str) -> int:
 
     :param str1: первое число
     :type str1: str
-
     :param str2: второе число
     :type str2: str
 
     :return: сумму чисел из строк
     :rtype: int
     """
-    result = None
+
+    result = int(str1) + int(str2)
     return result
 
 

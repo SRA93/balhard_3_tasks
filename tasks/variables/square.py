@@ -23,10 +23,12 @@ def square(side: str) -> tuple:
     :return: Кортеж (Периметр, Площадь, Диагональ)
     :rtype: tuple
     """
-    perimeter = None
-    s_square = None
-    diagonal = None
-    return perimeter, s_square, diagonal
+    from math import sqrt
+    side = float(side)
+    perimeter = side * 4
+    square = side ** 2
+    diagonal = side * sqrt(2)
+    return perimeter, square, diagonal
 
 
 if __name__ == '__main__':

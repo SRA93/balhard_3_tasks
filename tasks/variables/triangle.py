@@ -24,9 +24,10 @@ def triangle(side_1: int, side_2: int) -> tuple:
     :return: кортеж с параметрами
     :rtype: tuple
     """
-    hypotenuse = None
-    perimeter = None
-    square = None
+    from math import sqrt
+    hypotenuse = sqrt((int(side_1) ** 2) + (int(side_2) ** 2))
+    perimeter = int(side_1) + int(side_2) + hypotenuse
+    square = (int(side_1) * int(side_2)) * 0.5
     return hypotenuse, perimeter, square
 
 
